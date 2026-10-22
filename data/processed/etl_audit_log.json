@@ -1,0 +1,65 @@
+[
+  {
+    "rule": "flag_duplicate_logic_tracks",
+    "enabled": true,
+    "action": "flag",
+    "affected_rows": 12,
+    "affected_customers": 0,
+    "impact_on_eda": "None (No rows deleted; exactly 12 tracks flagged with is_duplicate_name_album=True).",
+    "description": "Identified 6 pairs of alternative formats of same song; preserved all 3,503 tracks without data loss."
+  },
+  {
+    "rule": "fill_null_composer",
+    "enabled": true,
+    "action": "impute",
+    "affected_rows": 978,
+    "affected_customers": 0,
+    "impact_on_eda": "None on purchase metrics; 978 track records imputed with 'Unknown' for downstream safety.",
+    "description": "Imputed 978 NULL Composer values with 'Unknown'."
+  },
+  {
+    "rule": "validate_positive_prices",
+    "enabled": true,
+    "action": "validate_pass",
+    "affected_rows": 0,
+    "affected_customers": 0,
+    "impact_on_eda": "None (0 invalid prices found; 100% of 2,240 lines have positive UnitPrice 0.99 or 1.99 USD).",
+    "description": "Verified UnitPrice > 0. Exactly 0 non-positive rows filtered."
+  },
+  {
+    "rule": "validate_positive_quantities",
+    "enabled": true,
+    "action": "validate_pass",
+    "affected_rows": 0,
+    "affected_customers": 0,
+    "impact_on_eda": "None (0 invalid quantities found; 100% of 2,240 lines have Quantity == 1).",
+    "description": "Verified Quantity > 0. Exactly 0 non-positive rows filtered."
+  },
+  {
+    "rule": "filter_media_types",
+    "enabled": false,
+    "action": "none",
+    "affected_rows": 0,
+    "affected_customers": 0,
+    "impact_on_eda": "None (No media types filtered; default retain all).",
+    "description": "Filter list empty or disabled."
+  },
+  {
+    "rule": "filter_zero_order_customers",
+    "enabled": false,
+    "action": "none",
+    "affected_rows": 0,
+    "affected_customers": 0,
+    "impact_on_eda": "None (All 59 customers retained; 59/59 have orders).",
+    "description": "Rule disabled; all customers retained."
+  },
+  {
+    "rule": "filter_unsold_tracks_from_dim",
+    "enabled": false,
+    "action": "none",
+    "affected_rows": 0,
+    "affected_customers": 0,
+    "impact_on_eda": "None (All 3,503 catalog tracks retained in dim_track with is_sold boolean flag).",
+    "description": "Retained entire 3,503 catalog tracks in dim_track."
+  }
+]

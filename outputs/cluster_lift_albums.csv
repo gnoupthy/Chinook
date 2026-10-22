@@ -1,0 +1,201 @@
+﻿cluster,cluster_size,item_level,item_id,item_name,customers_in_cluster,coverage_pct,overall_customers,overall_rate_pct,lift
+0,12,album,82,The Colour And The Shape,4,33.33,4,6.78,4.917
+0,12,album,83,My Way: The Best Of Frank Sinatra [Disc 1],4,33.33,4,6.78,4.917
+0,12,album,84,Roda De Funk,4,33.33,4,6.78,4.917
+0,12,album,85,As Canções de Eu Tu Eles,4,33.33,4,6.78,4.917
+0,12,album,155,St. Anger,4,33.33,4,6.78,4.917
+0,12,album,156,...And Justice For All,4,33.33,4,6.78,4.917
+0,12,album,157,Miles Ahead,4,33.33,4,6.78,4.917
+0,12,album,158,Milton Nascimento Ao Vivo,4,33.33,4,6.78,4.917
+0,12,album,159,Minas,4,33.33,4,6.78,4.917
+0,12,album,225,Volume Dois,5,41.67,5,8.47,4.917
+0,12,album,227,"Battlestar Galactica, Season 3",6,50.0,6,10.17,4.917
+0,12,album,160,Ace Of Spades,4,33.33,5,8.47,3.933
+0,12,album,11,Out Of Exile,3,25.0,4,6.78,3.688
+0,12,album,12,BackBeat Soundtrack,3,25.0,4,6.78,3.688
+0,12,album,13,The Best Of Billy Cobham,3,25.0,4,6.78,3.688
+0,12,album,14,Alcohol Fueled Brewtality Live! [Disc 1],3,25.0,4,6.78,3.688
+0,12,album,80,In Your Honor [Disc 2],3,25.0,4,6.78,3.688
+0,12,album,81,One By One,3,25.0,4,6.78,3.688
+0,12,album,154,Ride The Lightning,3,25.0,4,6.78,3.688
+0,12,album,161,Demorou...,3,25.0,4,6.78,3.688
+0,12,album,162,Motley Crue Greatest Hits,3,25.0,4,6.78,3.688
+0,12,album,163,From The Muddy Banks Of The Wishkah [Live],3,25.0,4,6.78,3.688
+0,12,album,164,Nevermind,3,25.0,4,6.78,3.688
+0,12,album,17,Black Sabbath Vol. 4 (Remaster),4,33.33,6,10.17,3.278
+0,12,album,229,"Lost, Season 3",4,33.33,6,10.17,3.278
+0,12,album,224,Acústico,5,41.67,8,13.56,3.073
+0,12,album,153,ReLoad,3,25.0,5,8.47,2.95
+0,12,album,230,"Lost, Season 1",3,25.0,5,8.47,2.95
+0,12,album,19,Chemical Wedding,4,33.33,7,11.86,2.81
+0,12,album,21,Prenda Minha,4,33.33,7,11.86,2.81
+0,12,album,86,Quanta Gente Veio Ver (Live),4,33.33,7,11.86,2.81
+0,12,album,89,American Idiot,4,33.33,7,11.86,2.81
+0,12,album,228,"Heroes, Season 1",4,33.33,7,11.86,2.81
+0,12,album,23,Minha Historia,6,50.0,11,18.64,2.682
+0,12,album,18,Body Count,3,25.0,6,10.17,2.458
+0,12,album,223,Serie Sem Limite (Disc 2),3,25.0,6,10.17,2.458
+0,12,album,91,Use Your Illusion I,3,25.0,7,11.86,2.107
+0,12,album,73,Unplugged,3,25.0,13,22.03,1.135
+1,10,album,29,Axé Bahia 2001,4,40.0,4,6.78,5.9
+1,10,album,30,BBC Sessions [Disc 1] [Live],4,40.0,4,6.78,5.9
+1,10,album,31,Bongo Fury,4,40.0,4,6.78,5.9
+1,10,album,32,Carnaval 2001,4,40.0,4,6.78,5.9
+1,10,album,33,Chill: Brazil (Disc 1),4,40.0,4,6.78,5.9
+1,10,album,93,Blue Moods,4,40.0,4,6.78,5.9
+1,10,album,175,Walking Into Clarksdale,4,40.0,4,6.78,5.9
+1,10,album,176,Original Soundtracks 1,4,40.0,4,6.78,5.9
+1,10,album,174,Tribute,5,50.0,6,10.17,4.917
+1,10,album,27,Cidade Negra - Hits,4,40.0,5,8.47,4.72
+1,10,album,26,Acústico MTV [Live],3,30.0,4,6.78,4.425
+1,10,album,28,Na Pista,3,30.0,4,6.78,4.425
+1,10,album,92,Use Your Illusion II,3,30.0,4,6.78,4.425
+1,10,album,94,A Matter of Life and Death,3,30.0,4,6.78,4.425
+1,10,album,95,A Real Dead One,3,30.0,4,6.78,4.425
+1,10,album,96,A Real Live One,3,30.0,4,6.78,4.425
+1,10,album,177,The Beast Live,3,30.0,4,6.78,4.425
+1,10,album,24,Afrociberdelia,3,30.0,5,8.47,3.54
+1,10,album,35,Garage Inc. (Disc 1),3,30.0,5,8.47,3.54
+1,10,album,178,Live On Two Legs [Live],3,30.0,5,8.47,3.54
+1,10,album,233,All That You Can't Leave Behind,3,30.0,5,8.47,3.54
+1,10,album,239,War,3,30.0,5,8.47,3.54
+1,10,album,237,Rattle And Hum,4,40.0,7,11.86,3.371
+1,10,album,238,The Best Of 1980-1990,4,40.0,7,11.86,3.371
+1,10,album,169,Arquivo Os Paralamas Do Sucesso,4,40.0,8,13.56,2.95
+1,10,album,235,How To Dismantle An Atomic Bomb,3,30.0,6,10.17,2.95
+1,10,album,240,Zooropa,3,30.0,6,10.17,2.95
+1,10,album,34,Chill: Brazil (Disc 2),3,30.0,7,11.86,2.529
+1,10,album,37,Greatest Kiss,3,30.0,7,11.86,2.529
+2,15,album,56,Cássia Eller - Coleção Sem Limite [Disc 2],5,33.33,5,8.47,3.933
+2,15,album,121,Surfing with the Alien (Remastered),4,26.67,4,6.78,3.933
+2,15,album,122,Jorge Ben Jor 25 Anos,4,26.67,4,6.78,3.933
+2,15,album,123,Jota Quest-1995,4,26.67,4,6.78,3.933
+2,15,album,124,Cafezinho,4,26.67,4,6.78,3.933
+2,15,album,192,Raul Seixas,4,26.67,4,6.78,3.933
+2,15,album,193,Blood Sugar Sex Magik,5,33.33,5,8.47,3.933
+2,15,album,194,By The Way,4,26.67,4,6.78,3.933
+2,15,album,195,Californication,4,26.67,4,6.78,3.933
+2,15,album,196,Retrospective I (1974-1980),5,33.33,5,8.47,3.933
+2,15,album,197,Santana - As Years Go By,3,20.0,3,5.08,3.933
+2,15,album,198,Santana Live,3,20.0,3,5.08,3.933
+2,15,album,199,Maquinarama,4,26.67,4,6.78,3.933
+2,15,album,200,O Samba Poconé,4,26.67,4,6.78,3.933
+2,15,album,256,Speak of the Devil,3,20.0,3,5.08,3.933
+2,15,album,257,20th Century Masters - The Millennium Collection: The Best of Scorpions,3,20.0,3,5.08,3.933
+2,15,album,258,House of Pain,3,20.0,3,5.08,3.933
+2,15,album,259,Radio Brasil (O Som da Jovem Vanguarda) - Seleccao de Henrique Amaro,3,20.0,3,5.08,3.933
+2,15,album,261,"LOST, Season 4",4,26.67,4,6.78,3.933
+2,15,album,269,Temple of the Dog,3,20.0,3,5.08,3.933
+2,15,album,270,Carry On,3,20.0,3,5.08,3.933
+2,15,album,271,Revelations,3,20.0,3,5.08,3.933
+2,15,album,134,Led Zeppelin III,5,33.33,6,10.17,3.278
+2,15,album,57,Cássia Eller - Sem Limite [Disc 1],4,26.67,5,8.47,3.147
+2,15,album,120,Are You Experienced?,4,26.67,5,8.47,3.147
+2,15,album,133,Led Zeppelin II,4,26.67,5,8.47,3.147
+2,15,album,255,Instant Karma: The Amnesty International Campaign to Save Darfur,4,26.67,5,8.47,3.147
+2,15,album,45,Sambas De Enredo 2001,3,20.0,4,6.78,2.95
+2,15,album,46,Supernatural,3,20.0,4,6.78,2.95
+2,15,album,47,The Best of Ed Motta,3,20.0,4,6.78,2.95
+2,15,album,48,The Essential Miles Davis [Disc 1],3,20.0,4,6.78,2.95
+2,15,album,49,The Essential Miles Davis [Disc 2],3,20.0,4,6.78,2.95
+2,15,album,119,Get Born,3,20.0,4,6.78,2.95
+2,15,album,131,IV,3,20.0,4,6.78,2.95
+2,15,album,191,Cesta Básica,3,20.0,4,6.78,2.95
+2,15,album,55,"Chronicle, Vol. 2",5,33.33,7,11.86,2.81
+2,15,album,126,Unplugged [Live],4,26.67,6,10.17,2.622
+2,15,album,132,Led Zeppelin I,4,26.67,6,10.17,2.622
+2,15,album,201,Judas 0: B-Sides and Rarities,4,26.67,6,10.17,2.622
+2,15,album,54,"Chronicle, Vol. 1",5,33.33,8,13.56,2.458
+2,15,album,129,Houses Of The Holy,3,20.0,5,8.47,2.36
+2,15,album,130,In Through The Out Door,3,20.0,5,8.47,2.36
+2,15,album,205,In Step,3,20.0,5,8.47,2.36
+2,15,album,52,Vinícius De Moraes - Sem Limite,4,26.67,7,11.86,2.248
+2,15,album,125,Living After Midnight,4,26.67,7,11.86,2.248
+2,15,album,202,Rotten Apples: Greatest Hits,4,26.67,7,11.86,2.248
+2,15,album,51,Up An' Atom,4,26.67,8,13.56,1.967
+2,15,album,127,BBC Sessions [Disc 2] [Live],3,20.0,6,10.17,1.967
+2,15,album,187,Out Of Time,3,20.0,6,10.17,1.967
+2,15,album,204,Morning Dance,3,20.0,6,10.17,1.967
+2,15,album,235,How To Dismantle An Atomic Bomb,3,20.0,6,10.17,1.967
+2,15,album,34,Chill: Brazil (Disc 2),3,20.0,7,11.86,1.686
+2,15,album,53,Vozes do MPB,3,20.0,7,11.86,1.686
+2,15,album,203,A-Sides,3,20.0,7,11.86,1.686
+2,15,album,253,"Battlestar Galactica (Classic), Season 1",3,20.0,8,13.56,1.475
+2,15,album,167,Acústico MTV,3,20.0,9,15.25,1.311
+2,15,album,141,Greatest Hits,4,26.67,15,25.42,1.049
+2,15,album,73,Unplugged,3,20.0,13,22.03,0.908
+3,10,album,40,Into The Light,4,40.0,4,6.78,5.9
+3,10,album,243,"The Best Of Van Halen, Vol. I",4,40.0,4,6.78,5.9
+3,10,album,244,Van Halen,4,40.0,4,6.78,5.9
+3,10,album,245,Van Halen III,4,40.0,4,6.78,5.9
+3,10,album,246,Contraband,5,50.0,5,8.47,5.9
+3,10,album,247,Vinicius De Moraes,4,40.0,4,6.78,5.9
+3,10,album,248,Ao Vivo [IMPORT],4,40.0,4,6.78,5.9
+3,10,album,250,"The Office, Season 2",3,30.0,3,5.08,5.9
+3,10,album,242,Diver Down,4,40.0,5,8.47,4.72
+3,10,album,41,Meus Momentos,3,30.0,4,6.78,4.425
+3,10,album,114,Virtual XI,3,30.0,4,6.78,4.425
+3,10,album,181,Ten,3,30.0,4,6.78,4.425
+3,10,album,182,Vs.,3,30.0,4,6.78,4.425
+3,10,album,183,Dark Side Of The Moon,3,30.0,4,6.78,4.425
+3,10,album,241,UB40 The Best Of - Volume Two [UK],3,30.0,4,6.78,4.425
+3,10,album,39,International Superhits,5,50.0,7,11.86,4.214
+3,10,album,38,Heart of the Night,4,40.0,6,10.17,3.933
+3,10,album,112,The Number of The Beast,4,40.0,6,10.17,3.933
+3,10,album,184,Os Cães Ladram Mas A Caravana Não Pára,4,40.0,6,10.17,3.933
+3,10,album,104,Live At Donington 1992 (Disc 2),3,30.0,5,8.47,3.54
+3,10,album,109,Rock In Rio [CD2],3,30.0,5,8.47,3.54
+3,10,album,113,The X Factor,3,30.0,5,8.47,3.54
+3,10,album,180,Riot Act,3,30.0,5,8.47,3.54
+3,10,album,186,News Of The World,4,40.0,7,11.86,3.371
+3,10,album,107,Powerslave,3,30.0,6,10.17,2.95
+3,10,album,149,Garage Inc. (Disc 2),3,30.0,6,10.17,2.95
+3,10,album,185,Greatest Hits I,3,30.0,6,10.17,2.95
+3,10,album,188,Green,3,30.0,6,10.17,2.95
+3,10,album,141,Greatest Hits,7,70.0,15,25.42,2.753
+3,10,album,190,The Best Of R.E.M.: The IRS Years,3,30.0,7,11.86,2.529
+3,10,album,222,Serie Sem Limite (Disc 1),3,30.0,7,11.86,2.529
+3,10,album,228,"Heroes, Season 1",3,30.0,7,11.86,2.529
+4,12,album,4,Let There Be Rock,4,33.33,4,6.78,4.917
+4,12,album,5,Big Ones,4,33.33,4,6.78,4.917
+4,12,album,142,Lulu Santos - RCA 100 Anos De Música - Álbum 01,4,33.33,4,6.78,4.917
+4,12,album,143,Lulu Santos - RCA 100 Anos De Música - Álbum 02,3,25.0,3,5.08,4.917
+4,12,album,144,Misplaced Childhood,4,33.33,4,6.78,4.917
+4,12,album,145,Barulhinho Bom,4,33.33,4,6.78,4.917
+4,12,album,210,Live [Disc 2],4,33.33,4,6.78,4.917
+4,12,album,211,The Singles,5,41.67,5,8.47,4.917
+4,12,album,212,Beyond Good And Evil,4,33.33,4,6.78,4.917
+4,12,album,213,"Pure Cult: The Best Of The Cult (For Rockers, Ravers, Lovers & Sinners) [UK]",4,33.33,4,6.78,4.917
+4,12,album,214,The Doors,4,33.33,4,6.78,4.917
+4,12,album,215,The Police Greatest Hits,4,33.33,4,6.78,4.917
+4,12,album,216,"Hot Rocks, 1964-1971 (Disc 1)",4,33.33,4,6.78,4.917
+4,12,album,217,No Security,4,33.33,4,6.78,4.917
+4,12,album,218,Voodoo Lounge,4,33.33,4,6.78,4.917
+4,12,album,75,Angel Dust,5,41.67,6,10.17,4.097
+4,12,album,208,[1997] Black Light Syndrome,4,33.33,5,8.47,3.933
+4,12,album,1,For Those About To Rock We Salute You,3,25.0,4,6.78,3.688
+4,12,album,6,Jagged Little Pill,3,25.0,4,6.78,3.688
+4,12,album,64,Slaves And Masters,3,25.0,4,6.78,3.688
+4,12,album,65,Stormbringer,3,25.0,4,6.78,3.688
+4,12,album,66,The Battle Rages On,3,25.0,4,6.78,3.688
+4,12,album,67,Vault: Def Leppard's Greatest Hits,3,25.0,4,6.78,3.688
+4,12,album,68,Outbreak,3,25.0,4,6.78,3.688
+4,12,album,209,Live [Disc 1],3,25.0,4,6.78,3.688
+4,12,album,220,Transmission,3,25.0,4,6.78,3.688
+4,12,album,74,Album Of The Year,5,41.67,7,11.86,3.512
+4,12,album,69,Djavan Ao Vivo - Vol. 02,4,33.33,6,10.17,3.278
+4,12,album,146,Seek And Shall Find: More Of The Best (1963-1981),4,33.33,6,10.17,3.278
+4,12,album,148,Black Album,4,33.33,6,10.17,3.278
+4,12,album,63,Purpendicular,3,25.0,5,8.47,2.95
+4,12,album,70,Djavan Ao Vivo - Vol. 1,3,25.0,5,8.47,2.95
+4,12,album,76,King For A Day Fool For A Lifetime,3,25.0,5,8.47,2.95
+4,12,album,140,Mais Do Mesmo,3,25.0,5,8.47,2.95
+4,12,album,147,The Best Of Men At Work,3,25.0,5,8.47,2.95
+4,12,album,71,Elis Regina-Minha História,4,33.33,7,11.86,2.81
+4,12,album,150,Kill 'Em All,3,25.0,6,10.17,2.458
+4,12,album,151,Load,3,25.0,6,10.17,2.458
+4,12,album,219,Tangents,3,25.0,6,10.17,2.458
+4,12,album,251,"The Office, Season 3",3,25.0,7,11.86,2.107
+4,12,album,72,The Cream Of Clapton,3,25.0,8,13.56,1.844
+4,12,album,73,Unplugged,3,25.0,13,22.03,1.135
+4,12,album,141,Greatest Hits,3,25.0,15,25.42,0.983

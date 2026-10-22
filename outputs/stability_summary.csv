@@ -1,0 +1,6 @@
+﻿config_id,name,model_family,k,train_ari_median,train_nmi_median,holdout_ari_median,holdout_ari_p5,holdout_ari_p95,holdout_sil_median,passed_stability_threshold_0_60,runtime_sec
+V2_album_count_svd5_dfFalse_KM_k5,"KMeans k=5 (V2 Count, SVD=5)",KMeans,5,0.5066,0.6501,0.4038,0.0782,0.7966,0.376,False,12.77
+V2_album_count_svd5_dfFalse_KM_k6,"KMeans k=6 (V2 Count, SVD=5)",KMeans,6,0.5196,0.6902,0.2928,0.0213,0.6642,0.3885,False,12.92
+V2_album_count_svd5_dfFalse_Agg_complete_k5,"Agglomerative Complete k=5 (V2 Count, SVD=5)",Agglomerative,5,0.4204,0.5981,0.321,0.0188,0.7643,0.3714,False,2.06
+V2_album_count_svd5_dfFalse_Spectral_NN8_k5,"Spectral NN=8 k=5 (V2 Count, SVD=5)",SpectralClustering,5,0.4905,0.6411,0.3131,0.0211,0.7797,0.3597,False,5.44
+V1_album_binary_svd5_dfFalse_KM_k5,"KMeans k=5 (V1 Binary, SVD=5)",KMeans,5,0.4421,0.6072,0.2632,0.0236,0.7201,0.3663,False,11.76

@@ -1,0 +1,547 @@
+{
+  "timestamp": "2026-10-22 22:55:58",
+  "total_customers": 59,
+  "cluster_profiles": {
+    "cluster_0": {
+      "cluster_id": 0,
+      "persona_name": "Cluster 0: Eclectic Soundtrack, Sci-Fi & Vintage Grooves",
+      "size": 12,
+      "percentage": 20.3,
+      "avg_spending": 41.29,
+      "avg_tracks": 38.0,
+      "top_genres_lift": [
+        {
+          "item_name": "Easy Listening",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Science Fiction",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Rock And Roll",
+          "lift": 3.688,
+          "coverage_pct": 25.0
+        },
+        {
+          "item_name": "Soundtrack",
+          "lift": 2.185,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "TV Shows",
+          "lift": 1.811,
+          "coverage_pct": 58.33
+        }
+      ],
+      "top_albums_lift": [
+        {
+          "item_name": "The Colour And The Shape",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "My Way: The Best Of Frank Sinatra [Disc 1]",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Roda De Funk",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "As Canções de Eu Tu Eles",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "St. Anger",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        }
+      ],
+      "top_artists_lift": [
+        {
+          "item_name": "Milton Nascimento",
+          "lift": 4.917,
+          "coverage_pct": 41.67
+        },
+        {
+          "item_name": "Frank Sinatra",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Funk Como Le Gusta",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Battlestar Galactica",
+          "lift": 4.917,
+          "coverage_pct": 50.0
+        },
+        {
+          "item_name": "Motörhead",
+          "lift": 3.933,
+          "coverage_pct": 33.33
+        }
+      ],
+      "dominant_countries": {
+        "USA": 3,
+        "Canada": 2,
+        "Czech Republic": 1
+      }
+    },
+    "cluster_1": {
+      "cluster_id": 1,
+      "persona_name": "Cluster 1: Soulful Blues, Reggae & Acoustic Connoisseurs",
+      "size": 10,
+      "percentage": 16.9,
+      "avg_spending": 39.12,
+      "avg_tracks": 38.0,
+      "top_genres_lift": [
+        {
+          "item_name": "Soundtrack",
+          "lift": 3.278,
+          "coverage_pct": 50.0
+        },
+        {
+          "item_name": "Reggae",
+          "lift": 2.95,
+          "coverage_pct": 60.0
+        },
+        {
+          "item_name": "Pop",
+          "lift": 2.269,
+          "coverage_pct": 50.0
+        },
+        {
+          "item_name": "Blues",
+          "lift": 1.539,
+          "coverage_pct": 60.0
+        },
+        {
+          "item_name": "Classical",
+          "lift": 1.264,
+          "coverage_pct": 30.0
+        }
+      ],
+      "top_albums_lift": [
+        {
+          "item_name": "Axé Bahia 2001",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "BBC Sessions [Disc 1] [Live]",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Bongo Fury",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Carnaval 2001",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Chill: Brazil (Disc 1)",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        }
+      ],
+      "top_artists_lift": [
+        {
+          "item_name": "Frank Zappa & Captain Beefheart",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Marcos Valle",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Incognito",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Page & Plant",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Passengers",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        }
+      ],
+      "dominant_countries": {
+        "Brazil": 2,
+        "Germany": 1,
+        "Austria": 1
+      }
+    },
+    "cluster_2": {
+      "cluster_id": 2,
+      "persona_name": "Cluster 2: Global Fusion, Alternative & Dance Explorers",
+      "size": 15,
+      "percentage": 25.4,
+      "avg_spending": 38.89,
+      "avg_tracks": 37.9,
+      "top_genres_lift": [
+        {
+          "item_name": "Alternative",
+          "lift": 2.95,
+          "coverage_pct": 20.0
+        },
+        {
+          "item_name": "Electronica/Dance",
+          "lift": 2.81,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Bossa Nova",
+          "lift": 2.248,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "World",
+          "lift": 2.185,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Hip Hop/Rap",
+          "lift": 1.748,
+          "coverage_pct": 26.67
+        }
+      ],
+      "top_albums_lift": [
+        {
+          "item_name": "Cássia Eller - Coleção Sem Limite [Disc 2]",
+          "lift": 3.933,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Surfing with the Alien (Remastered)",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "Jorge Ben Jor 25 Anos",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "Jota Quest-1995",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "Cafezinho",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        }
+      ],
+      "top_artists_lift": [
+        {
+          "item_name": "O Rappa",
+          "lift": 3.933,
+          "coverage_pct": 20.0
+        },
+        {
+          "item_name": "Jorge Ben",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "Joe Satriani",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "Jota Quest",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        },
+        {
+          "item_name": "João Suplicy",
+          "lift": 3.933,
+          "coverage_pct": 26.67
+        }
+      ],
+      "dominant_countries": {
+        "USA": 3,
+        "Canada": 3,
+        "France": 2
+      }
+    },
+    "cluster_3": {
+      "cluster_id": 3,
+      "persona_name": "Cluster 3: Hard Rock, Heavy Metal & Urban Rhythm Lovers",
+      "size": 10,
+      "percentage": 16.9,
+      "avg_spending": 39.72,
+      "avg_tracks": 38.0,
+      "top_genres_lift": [
+        {
+          "item_name": "Hip Hop/Rap",
+          "lift": 2.622,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Reggae",
+          "lift": 2.458,
+          "coverage_pct": 50.0
+        },
+        {
+          "item_name": "Drama",
+          "lift": 1.264,
+          "coverage_pct": 30.0
+        },
+        {
+          "item_name": "Jazz",
+          "lift": 1.106,
+          "coverage_pct": 60.0
+        },
+        {
+          "item_name": "Metal",
+          "lift": 1.073,
+          "coverage_pct": 100.0
+        }
+      ],
+      "top_albums_lift": [
+        {
+          "item_name": "Into The Light",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "The Best Of Van Halen, Vol. I",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Van Halen",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Van Halen III",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Contraband",
+          "lift": 5.9,
+          "coverage_pct": 50.0
+        }
+      ],
+      "top_artists_lift": [
+        {
+          "item_name": "David Coverdale",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Vinícius De Moraes",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Velvet Revolver",
+          "lift": 5.9,
+          "coverage_pct": 50.0
+        },
+        {
+          "item_name": "Zeca Pagodinho",
+          "lift": 5.9,
+          "coverage_pct": 40.0
+        },
+        {
+          "item_name": "Van Halen",
+          "lift": 5.057,
+          "coverage_pct": 60.0
+        }
+      ],
+      "dominant_countries": {
+        "USA": 2,
+        "Czech Republic": 1,
+        "Brazil": 1
+      }
+    },
+    "cluster_4": {
+      "cluster_id": 4,
+      "persona_name": "Cluster 4: Classic Blues-Rock, Punk & Symphonic Fans",
+      "size": 12,
+      "percentage": 20.3,
+      "avg_spending": 38.45,
+      "avg_tracks": 38.0,
+      "top_genres_lift": [
+        {
+          "item_name": "Classical",
+          "lift": 1.756,
+          "coverage_pct": 41.67
+        },
+        {
+          "item_name": "Blues",
+          "lift": 1.496,
+          "coverage_pct": 58.33
+        },
+        {
+          "item_name": "R&B/Soul",
+          "lift": 1.446,
+          "coverage_pct": 41.67
+        },
+        {
+          "item_name": "Alternative & Punk",
+          "lift": 1.082,
+          "coverage_pct": 91.67
+        },
+        {
+          "item_name": "Metal",
+          "lift": 1.073,
+          "coverage_pct": 100.0
+        }
+      ],
+      "top_albums_lift": [
+        {
+          "item_name": "Let There Be Rock",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Big Ones",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Lulu Santos - RCA 100 Anos De Música - Álbum 01",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Lulu Santos - RCA 100 Anos De Música - Álbum 02",
+          "lift": 4.917,
+          "coverage_pct": 25.0
+        },
+        {
+          "item_name": "Misplaced Childhood",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        }
+      ],
+      "top_artists_lift": [
+        {
+          "item_name": "Aerosmith",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Lulu Santos",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Marillion",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "Marisa Monte",
+          "lift": 4.917,
+          "coverage_pct": 33.33
+        },
+        {
+          "item_name": "The Clash",
+          "lift": 4.917,
+          "coverage_pct": 41.67
+        }
+      ],
+      "dominant_countries": {
+        "USA": 4,
+        "United Kingdom": 2,
+        "Brazil": 1
+      }
+    }
+  },
+  "demographic_tests": {
+    "TotalSpent": {
+      "test_type": "Kruskal-Wallis H-test",
+      "h_statistic": 4.825,
+      "p_value": 0.3057,
+      "is_statistically_significant_0_05": false,
+      "effect_size_eta_squared": 0.0153,
+      "effect_size_magnitude": "Small",
+      "cluster_breakdown": {
+        "cluster_0_mean": 41.29,
+        "cluster_0_median": 39.62,
+        "cluster_1_mean": 39.12,
+        "cluster_1_median": 37.62,
+        "cluster_2_mean": 38.89,
+        "cluster_2_median": 38.62,
+        "cluster_3_mean": 39.72,
+        "cluster_3_median": 38.12,
+        "cluster_4_mean": 38.45,
+        "cluster_4_median": 37.62
+      }
+    },
+    "TotalTracksPurchased": {
+      "test_type": "Kruskal-Wallis H-test",
+      "h_statistic": 2.9333,
+      "p_value": 0.569,
+      "is_statistically_significant_0_05": false,
+      "effect_size_eta_squared": 0.0,
+      "effect_size_magnitude": "Small",
+      "cluster_breakdown": {
+        "cluster_0_mean": 38.0,
+        "cluster_0_median": 38.0,
+        "cluster_1_mean": 38.0,
+        "cluster_1_median": 38.0,
+        "cluster_2_mean": 37.87,
+        "cluster_2_median": 38.0,
+        "cluster_3_mean": 38.0,
+        "cluster_3_median": 38.0,
+        "cluster_4_mean": 38.0,
+        "cluster_4_median": 38.0
+      }
+    },
+    "InvoiceCount": {
+      "test_type": "Kruskal-Wallis H-test",
+      "h_statistic": 2.9333,
+      "p_value": 0.569,
+      "is_statistically_significant_0_05": false,
+      "effect_size_eta_squared": 0.0,
+      "effect_size_magnitude": "Small",
+      "cluster_breakdown": {
+        "cluster_0_mean": 7.0,
+        "cluster_0_median": 7.0,
+        "cluster_1_mean": 7.0,
+        "cluster_1_median": 7.0,
+        "cluster_2_mean": 6.93,
+        "cluster_2_median": 7.0,
+        "cluster_3_mean": 7.0,
+        "cluster_3_median": 7.0,
+        "cluster_4_mean": 7.0,
+        "cluster_4_median": 7.0
+      }
+    },
+    "Region_distribution": {
+      "test_type": "Chi-Square Test of Independence",
+      "chi2_statistic": 7.032,
+      "p_value": 0.9726,
+      "degrees_of_freedom": 16,
+      "is_statistically_significant_0_05": false,
+      "effect_size_cramers_v": 0.1726,
+      "effect_size_magnitude": "Medium"
+    }
+  }
+}

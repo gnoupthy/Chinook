@@ -1,0 +1,14 @@
+﻿baseline_type,baseline_name,k,silhouette_cosine,davies_bouldin,calinski_harabasz,min_cluster_size,max_cluster_size,cluster_sizes,balance_ratio,description
+Business Heuristic,Dominant Genre (Top Thể Loại),3,-0.013,2.7992,2.4184,5,47,"[47, 7, 5]",0.1064,"Gán khách theo thể loại chiếm nhiều track mua nhất (Rock: 47, Latin: 7, Metal: 5)"
+Business Heuristic,Country (Quốc gia gộp nhóm nhỏ),5,-0.1183,5.2858,1.0363,5,28,"[28, 13, 8, 5, 5]",0.1786,"Gán khách theo quốc gia (USA: 13, Canada: 8, Brazil: 5, France: 5, Other: 28)"
+Statistical Random,Random Permutation (k=2),2,0.0012,8.1851,1.0376,29,30,Mean over 100 runs (P95 Sil=0.0274),1.0,Gán nhãn ngẫu nhiên độc lập k=2 qua 100 lần lặp
+Statistical Random,Random Permutation (k=3),3,-0.037,7.2538,1.0266,19,20,Mean over 100 runs (P95 Sil=-0.0199),1.0,Gán nhãn ngẫu nhiên độc lập k=3 qua 100 lần lặp
+Statistical Random,Random Permutation (k=4),4,-0.0683,6.8597,0.9583,14,15,Mean over 100 runs (P95 Sil=-0.0489),1.0,Gán nhãn ngẫu nhiên độc lập k=4 qua 100 lần lặp
+Statistical Random,Random Permutation (k=5),5,-0.0902,6.339,1.0046,11,12,Mean over 100 runs (P95 Sil=-0.0721),1.0,Gán nhãn ngẫu nhiên độc lập k=5 qua 100 lần lặp
+Statistical Random,Random Permutation (k=6),6,-0.1144,5.8114,1.0213,9,10,Mean over 100 runs (P95 Sil=-0.0957),1.0,Gán nhãn ngẫu nhiên độc lập k=6 qua 100 lần lặp
+Raw Feature Benchmark,Raw Binary KMeans (k=2),2,0.0571,4.4839,2.7727,26,33,"[33, 26]",0.7879,"KMeans trực tiếp trên ma trận nhị phân 59x347 (không IDF, không SVD, không L2-norm)"
+Raw Feature Benchmark,Raw Binary KMeans (k=3),3,0.0603,3.6588,2.6955,4,29,"[29, 26, 4]",0.1379,"KMeans trực tiếp trên ma trận nhị phân 59x347 (không IDF, không SVD, không L2-norm)"
+Raw Feature Benchmark,Raw Binary KMeans (k=4),4,0.0551,3.4239,2.4154,4,32,"[32, 15, 8, 4]",0.125,"KMeans trực tiếp trên ma trận nhị phân 59x347 (không IDF, không SVD, không L2-norm)"
+Raw Feature Benchmark,Raw Binary KMeans (k=5),5,0.0768,2.9776,2.4677,4,33,"[33, 11, 6, 5, 4]",0.1212,"KMeans trực tiếp trên ma trận nhị phân 59x347 (không IDF, không SVD, không L2-norm)"
+Raw Feature Benchmark,Raw Binary KMeans (k=6),6,0.0958,2.8247,2.5416,6,14,"[14, 12, 11, 10, 6, 6]",0.4286,"KMeans trực tiếp trên ma trận nhị phân 59x347 (không IDF, không SVD, không L2-norm)"
+Null Model Benchmark,Null Model P95 (Khách x Album Agglomerative),6,0.0301,999.0,0.0,0,59,P95 of 300 curveball permutations,0.0,Ngưỡng phân vị 95 của mô hình vô hiệu hoán vị bảo toàn bậc hàng và cột

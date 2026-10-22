@@ -1,0 +1,67 @@
+# QUY TẮC VÀ TIÊU CHÍ RA QUYẾT ĐỊNH CHỌN MÔ HÌNH GOM CỤM (DECISION RULES)
+# Thiết lập TRƯỚC khi huấn luyện và tuning mô hình nhằm ngăn chặn P-hacking và thiên vị hậu nghiệm.
+# Áp dụng cho Pha C2 (Tuning & Lựa chọn ứng viên) và Pha C3 (Đánh giá độ ổn định cụm).
+
+version: "1.0.0"
+date_created: "2026-10-22"
+
+# 1. Giới hạn số cụm k
+k_range:
+  min_k: 2
+  max_k: 6
+  rationale: >
+    Tập khách hàng Chinook có quy mô n = 59. Số cụm k > 6 sẽ phân mảnh dữ liệu thành các cụm
+    quá nhỏ (trung bình < 9 khách/cụm), không khả thi cho việc vận hành các chiến dịch marketing
+    hoặc phân đoạn kinh doanh thực tế.
+
+# 2. Ngưỡng kích thước cụm tối thiểu (Hard Filter)
+cluster_size_constraints:
+  min_cluster_size: 5
+  filter_rule: "LOẠI BỎ vô điều kiện bất kỳ cấu hình nào có min_cluster_size < 5 khách hàng."
+  rationale: >
+    Một cụm dưới 5 khách hàng (< 8.5% tập mẫu) chỉ là nhóm cá biệt/ngoại lai (outliers),
+    không đại diện cho một phân khúc thị trường (segment) có ý nghĩa kinh tế để thiết kế ưu đãi bundle.
+
+# 3. Ngưỡng vượt Null Model (Statistical Significance Filter)
+null_model_thresholds:
+  confidence_percentile: 95
+  rule: >
+    Chỉ xem xét các cấu hình mô hình có điểm Silhouette (Cosine) vượt qua phân vị thứ 95 (P95)
+    của Null Model tương ứng trên cùng không gian đặc trưng.
+  reference_null_p95:
+    album_agglomerative: 0.0301
+    album_kmeans: 0.0165
+    artist_agglomerative: 0.0945
+    artist_kmeans: 0.0438
+    genre_agglomerative: 0.3318
+    genre_kmeans: 0.1840
+  rationale: >
+    Điểm Silhouette quan sát được phải cao hơn 95% các ma trận ngẫu nhiên hoán vị bảo toàn biên
+    để đảm bảo cấu hình phân cụm phản ánh cấu trúc thực tế chứ không phải nhiễu số học.
+
+# 4. Tiêu chí xếp hạng tổng hợp (Composite Ranking)
+composite_ranking:
+  target_candidates_count: [3, 5]  # Chọn tối đa 3-5 ứng viên tốt nhất
+  metrics_priority:
+    1: "Silhouette Score (Cosine) - Càng cao càng tốt (tách biệt tốt giữa các cụm)"
+    2: "Davies-Bouldin Index - Càng thấp càng tốt (độ nén cụm tốt)"
+    3: "Calinski-Harabasz Index - Càng cao càng tốt (tỷ số phương sai liên cụm / nội cụm)"
+    4: "Độ cân đối kích thước cụm (Balance Ratio = min_size / max_size) - Ưu tiên các cụm không quá lệch"
+
+# 5. Ngưỡng đánh giá độ ổn định cụm (Subsampling Stability Guidelines)
+stability_thresholds:
+  metric: "Median Adjusted Rand Index (ARI) qua 100 lần lấy mẫu con 80% (subsample without replacement)"
+  reliable_threshold: 0.60    # ARI >= 0.6: Cụm đáng tin cậy (Robust)
+  moderate_threshold: 0.40    # 0.40 <= ARI < 0.60: Độ ổn định trung bình
+  unstable_threshold: 0.40    # ARI < 0.40: Không ổn định, loại bỏ
+
+# 6. Quy tắc ưu tiên khi hòa điểm (Tie-Breaking Rules)
+tie_breaking_order:
+  1: "Mô hình có thuật toán đơn giản hơn, ít giả định hơn (ví dụ KMeans hoặc Agglomerative ưu tiên hơn GMM/Spectral)"
+  2: "Mô hình có khả năng giải thích kinh doanh trực quan hơn (dễ mô tả chân dung khách hàng)"
+  3: "Số cụm k nhỏ hơn (ưu tiên tính cô đọng theo nguyên lý Dao cạo Ockham)"
+
+# 7. Ghi nhận rủi ro so sánh nhiều lần (Multiple Testing Risk)
+multiple_testing_acknowledgment:
+  track_total_evaluated_configurations: true
+  action: "Lưu toàn bộ kết quả của mọi cấu hình đã thử vào outputs/model_comparison.csv để kiểm toán minh bạch."

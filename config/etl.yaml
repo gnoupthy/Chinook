@@ -1,0 +1,44 @@
+# ETL Configuration for Chinook Analytical Data Layer
+version: "1.0.0"
+
+database:
+  sqlite_path: "data/Chinook_Sqlite.sqlite"
+  fallback_sqlite_path: "Chinook_Sqlite.sqlite"
+  read_only: true
+
+storage:
+  output_dir: "data/processed"
+  format: "parquet" # Supported: "parquet", "csv"
+  compression: "snappy"
+
+# Cleaning & Filtering Rules Configuration
+# Every rule is modular, isolated, and can be toggled on/off without implicit side effects.
+rules:
+  # Rule 1: Flag duplicate logic tracks with identical (Name, AlbumId) in dim_track
+  # Reason: 6 pairs exist due to format/duration variations. Flagging allows tracking without data loss.
+  flag_duplicate_tracks: true
+
+  # Rule 2: Fill NULL Composer in dim_track with 'Unknown'
+  # Reason: 978 catalog tracks lack composer credits. Imputing 'Unknown' prevents missingness downstream.
+  fill_null_composer: true
+
+  # Rule 3: Validate and filter non-positive unit prices (UnitPrice <= 0)
+  # Reason: Protect financial data integrity.
+  filter_non_positive_prices: true
+
+  # Rule 4: Validate and filter non-positive quantities (Quantity <= 0)
+  # Reason: Protect physical/digital purchase sanity.
+  filter_non_positive_quantities: true
+
+  # Rule 5: Filter unsold tracks from dim_track
+  # Default: false (dim_track preserves all 3,503 catalog tracks with an explicit 'is_sold' flag).
+  # If true, dim_track is restricted only to the 1,984 tracks with purchase history.
+  filter_unsold_tracks_from_dim: false
+
+  # Rule 6: Filter specific MediaTypeId list (e.g., [3] for Protected MPEG-4 Video)
+  # Default: [] (Keep all media types intact).
+  filter_media_type_ids: []
+
+  # Rule 7: Filter customers with zero invoices from dim_customer
+  # Default: false (All 59 customers currently have orders; flag available for incremental batches).
+  filter_zero_order_customers: false

@@ -1,0 +1,4 @@
+ActionId,Timestamp,Target,ActionType,AffectedRows,Reason
+1,2026-10-22 14:11:33,Chinook_Sqlite.sqlite (Tất cả các bảng),Data Verification (Integrity & Hygiene Check),0,"Kiểm tra toàn vẹn: Không có bản ghi mồ côi (FK mismatch), Invoice.Total khớp 100% InvoiceLine, không trùng lặp Primary Key, tất cả 59 khách hàng đều có giao dịch hợp lệ. Không can thiệp sửa đổi CSDL gốc."
+2,2026-10-22 14:11:33,"Track (Name, AlbumId duplicates)",Entity Resolution & De-duplication Decision,12,"Phát hiện 6 cặp track trùng (Name, AlbumId). Xác định đây là các định dạng media/kích thước khác nhau của cùng tác phẩm, đều hợp lệ trong catalog. Giữ nguyên dữ liệu, quy về cùng AlbumId khi xây dựng đặc trưng Customer-Album."
+3,2026-10-22 14:11:33,Feature Engineering Matrix Filtering,Catalog Filtering for Clustering,1519,Loại bỏ 1519 track chưa từng bán ra khỏi không gian đặc trưng ma trận thưa để tránh cột toàn số 0 vô nghĩa khi tính toán khoảng cách/tương đồng giữa khách hàng.

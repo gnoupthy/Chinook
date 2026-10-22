@@ -1,0 +1,150 @@
+{
+  "random_state": 42,
+  "n_customers": 59,
+  "variants": {
+    "V1_album_binary": {
+      "name": "Album Binary + IDF",
+      "raw_shape": [
+        59,
+        347
+      ],
+      "raw_density": 0.06355,
+      "raw_non_zeros": 1301,
+      "latent_shape": [
+        59,
+        10
+      ],
+      "dropped_columns_by_filter": 82,
+      "retained_columns": 265,
+      "actual_explained_variance": 0.3994,
+      "svd_grid_explained_variance": {
+        "5": 0.2003,
+        "8": 0.3233,
+        "10": 0.3994,
+        "15": 0.5693
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V1_album_binary.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V1_album_binary.parquet"
+    },
+    "V2_album_count": {
+      "name": "Album Count + IDF",
+      "raw_shape": [
+        59,
+        347
+      ],
+      "raw_density": 0.06355,
+      "raw_non_zeros": 1301,
+      "latent_shape": [
+        59,
+        10
+      ],
+      "dropped_columns_by_filter": 82,
+      "retained_columns": 265,
+      "actual_explained_variance": 0.3468,
+      "svd_grid_explained_variance": {
+        "5": 0.1739,
+        "8": 0.2817,
+        "10": 0.3468,
+        "15": 0.4939
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V2_album_count.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V2_album_count.parquet"
+    },
+    "V3_album_coverage": {
+      "name": "Album Coverage Ratio",
+      "raw_shape": [
+        59,
+        347
+      ],
+      "raw_density": 0.06355,
+      "raw_non_zeros": 1301,
+      "latent_shape": [
+        59,
+        10
+      ],
+      "dropped_columns_by_filter": 82,
+      "retained_columns": 265,
+      "actual_explained_variance": 0.3199,
+      "svd_grid_explained_variance": {
+        "5": 0.1598,
+        "8": 0.2589,
+        "10": 0.3199,
+        "15": 0.4598
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V3_album_coverage.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V3_album_coverage.parquet"
+    },
+    "V4_genre_share": {
+      "name": "Genre Share",
+      "raw_shape": [
+        59,
+        25
+      ],
+      "raw_density": 0.29831,
+      "raw_non_zeros": 440,
+      "latent_shape": [
+        59,
+        5
+      ],
+      "dropped_columns_by_filter": 1,
+      "retained_columns": 24,
+      "actual_explained_variance": 0.7478,
+      "svd_grid_explained_variance": {
+        "5": 0.7478,
+        "8": 0.8656,
+        "10": 0.9125,
+        "15": 0.9711
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V4_genre_share.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V4_genre_share.parquet"
+    },
+    "V5_artist_binary": {
+      "name": "Artist Binary + IDF",
+      "raw_shape": [
+        59,
+        275
+      ],
+      "raw_density": 0.05689,
+      "raw_non_zeros": 923,
+      "latent_shape": [
+        59,
+        10
+      ],
+      "dropped_columns_by_filter": 142,
+      "retained_columns": 133,
+      "actual_explained_variance": 0.4544,
+      "svd_grid_explained_variance": {
+        "5": 0.2282,
+        "8": 0.3709,
+        "10": 0.4544,
+        "15": 0.6181
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V5_artist_binary.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V5_artist_binary.parquet"
+    },
+    "V6_composite_album_genre": {
+      "name": "Composite Album + Genre",
+      "raw_shape": [
+        59,
+        372
+      ],
+      "raw_density": 0.07932,
+      "raw_non_zeros": 1741,
+      "latent_shape": [
+        59,
+        10
+      ],
+      "dropped_columns_by_filter": 83,
+      "retained_columns": 289,
+      "actual_explained_variance": 0.3549,
+      "svd_grid_explained_variance": {
+        "5": 0.181,
+        "8": 0.2894,
+        "10": 0.3549,
+        "15": 0.5005
+      },
+      "feature_matrix_path": "outputs\\feature_matrix_V6_composite_album_genre.parquet",
+      "raw_matrix_path": "outputs\\raw_matrix_V6_composite_album_genre.parquet"
+    }
+  }
+}

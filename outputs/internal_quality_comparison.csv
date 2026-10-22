@@ -1,0 +1,6 @@
+﻿config_id,name,k,silhouette_svd,silhouette_raw_l2,null_p95,gap_to_null_p95,davies_bouldin,calinski_harabasz,min_cluster_size,max_cluster_size,balance_ratio,cluster_sizes
+V2_album_count_svd5_dfFalse_KM_k5,"KMeans k=5 (V2 Count, SVD=5)",5,0.5941,0.0665,0.4441,0.15,0.8234,32.5436,10,15,0.6667,"[15, 12, 12, 10, 10]"
+V2_album_count_svd5_dfFalse_KM_k6,"KMeans k=6 (V2 Count, SVD=5)",6,0.5976,0.0731,0.4411,0.1565,0.7831,34.5654,7,12,0.5833,"[12, 12, 10, 9, 9, 7]"
+V2_album_count_svd5_dfFalse_Agg_complete_k5,"Agglomerative Complete k=5 (V2 Count, SVD=5)",5,0.5728,0.0614,0.401,0.1718,0.8835,31.0323,11,13,0.8462,"[13, 12, 12, 11, 11]"
+V2_album_count_svd5_dfFalse_Spectral_NN8_k5,"Spectral NN=8 k=5 (V2 Count, SVD=5)",5,0.5902,0.0673,0.4347,0.1555,0.81,32.1842,10,14,0.7143,"[14, 13, 12, 10, 10]"
+V1_album_binary_svd5_dfFalse_KM_k5,"KMeans k=5 (V1 Binary, SVD=5)",5,0.5608,0.0899,0.4441,0.1167,0.8643,30.2313,11,14,0.7857,"[14, 12, 11, 11, 11]"

@@ -1,0 +1,116 @@
+# Cấu hình Feature Engineering & Pipeline (Pha C1)
+# Tuân thủ chặt chẽ reports/problem_selection.md và reports/data_quality.md
+
+data_dir: "data/processed"
+output_dir: "outputs"
+random_state: 42
+
+# Ngưỡng lọc cột hiếm (chỉ xuất hiện ở 1 khách hàng trên tập train)
+min_customers_threshold: 2
+
+# Lưới số chiều SVD để đánh giá explained variance
+svd_components_grid: [5, 8, 10, 15]
+
+# Danh sách cột nhân khẩu học & tài chính TUYỆT ĐỐI LOẠI KHỎI không gian đặc trưng ML
+# Các trường này được lưu trữ độc lập để diễn giải cụm (Cluster Profiling & Interpretation)
+excluded_columns_for_features:
+  - CustomerId
+  - FirstName
+  - LastName
+  - Company
+  - Address
+  - City
+  - State
+  - Country
+  - PostalCode
+  - Phone
+  - Fax
+  - Email
+  - SupportRepId
+  - CustomerName
+  - total_spending
+  - total_tracks_bought
+  - unique_albums_bought
+  - unique_artists_bought
+  - has_purchases
+
+# Rationale cho việc loại bỏ spending/frequency:
+# EDA đã chứng minh chi tiêu (~37-39$) và số bài mua (~36-38 bài) của 59 khách hàng có hệ số biến thiên (CV) cực nhỏ,
+# gần như hằng số. Đưa vào sẽ không phân hóa được thị hiếu và có nguy cơ làm lấn át 'gu âm nhạc' bởi 'quy mô'.
+
+# Danh sách 6 biến thể đặc trưng chốt trước khi chạy mô hình (Tối đa 6 biến thể)
+variants:
+  V1_album_binary:
+    name: "Album Binary + IDF"
+    level: "album"
+    metric: "binary"
+    use_idf: true
+    min_customers: 2
+    n_components: 10
+    drop_first_component: false
+    description: "Khách x Album nhị phân (1 nếu đã mua >= 1 track của album, 0 nếu không), có trọng số IDF"
+    rationale: "Trọng tâm bài toán kinh doanh bundle album, loại bỏ tính phân mảnh trực giao của track"
+
+  V2_album_count:
+    name: "Album Count + IDF"
+    level: "album"
+    metric: "count"
+    use_idf: true
+    min_customers: 2
+    n_components: 10
+    drop_first_component: false
+    description: "Khách x Album đếm số track đã mua trong album, có trọng số IDF"
+    rationale: "Đo lường độ sâu quan tâm (depth of interest) của khách hàng đối với từng album"
+
+  V3_album_coverage:
+    name: "Album Coverage Ratio"
+    level: "album"
+    metric: "coverage"
+    use_idf: false
+    min_customers: 2
+    n_components: 10
+    drop_first_component: false
+    description: "Khách x Album tỷ lệ phủ (số track đã mua / tổng số track của album)"
+    rationale: "Chuẩn hóa theo độ dài album để phản ánh mức độ hoàn thành album (Complete My Album)"
+
+  V4_genre_share:
+    name: "Genre Share"
+    level: "genre"
+    metric: "share"
+    use_idf: false
+    min_customers: 1
+    n_components: 5
+    drop_first_component: false
+    description: "Khách x Genre tỷ trọng mua (số track thể loại / tổng track đã mua của khách)"
+    rationale: "Khắc phục hiện tượng ma trận thể loại dày đặc (~31% ô > 0); tỷ trọng phản ánh phân bổ thị hiếu thực chất"
+
+  V5_artist_binary:
+    name: "Artist Binary + IDF"
+    level: "artist"
+    metric: "binary"
+    use_idf: true
+    min_customers: 2
+    n_components: 10
+    drop_first_component: false
+    description: "Khách x Artist nhị phân, có trọng số IDF"
+    rationale: "Không gian hỗ trợ diễn giải sở thích nghệ sĩ với độ dày 9.48% (165 nghệ sĩ đã bán)"
+
+  V6_composite_album_genre:
+    name: "Composite Album + Genre"
+    composite: true
+    level: "composite"
+    blocks:
+      - level: "album"
+        metric: "count"
+        use_idf: true
+        min_customers: 2
+        weight: 0.7
+      - level: "genre"
+        metric: "share"
+        use_idf: false
+        min_customers: 1
+        weight: 0.3
+    n_components: 10
+    drop_first_component: false
+    description: "Ghép khối Khách x Album (trọng số 0.7) và Khách x Genre (trọng số 0.3)"
+    rationale: "Kết hợp độ phân giải chi tiết của Album với tính khái quát ổn định của Thể loại âm nhạc"

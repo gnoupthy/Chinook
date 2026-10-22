@@ -1,0 +1,8 @@
+rule,enabled,action,affected_rows,affected_customers,impact_on_eda,description
+flag_duplicate_logic_tracks,True,flag,12,0,None (No rows deleted; exactly 12 tracks flagged with is_duplicate_name_album=True).,"Identified 6 pairs of alternative formats of same song; preserved all 3,503 tracks without data loss."
+fill_null_composer,True,impute,978,0,None on purchase metrics; 978 track records imputed with 'Unknown' for downstream safety.,Imputed 978 NULL Composer values with 'Unknown'.
+validate_positive_prices,True,validate_pass,0,0,"None (0 invalid prices found; 100% of 2,240 lines have positive UnitPrice 0.99 or 1.99 USD).",Verified UnitPrice > 0. Exactly 0 non-positive rows filtered.
+validate_positive_quantities,True,validate_pass,0,0,"None (0 invalid quantities found; 100% of 2,240 lines have Quantity == 1).",Verified Quantity > 0. Exactly 0 non-positive rows filtered.
+filter_media_types,False,none,0,0,None (No media types filtered; default retain all).,Filter list empty or disabled.
+filter_zero_order_customers,False,none,0,0,None (All 59 customers retained; 59/59 have orders).,Rule disabled; all customers retained.
+filter_unsold_tracks_from_dim,False,none,0,0,"None (All 3,503 catalog tracks retained in dim_track with is_sold boolean flag).","Retained entire 3,503 catalog tracks in dim_track."

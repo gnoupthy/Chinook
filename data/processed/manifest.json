@@ -1,0 +1,292 @@
+{
+  "pipeline_name": "chinook_analytical_etl",
+  "config_version": "1.0.0",
+  "run_timestamp_utc": "2026-10-22T16:10:05.010494+00:00",
+  "output_format": "parquet",
+  "total_tables": 6,
+  "total_fact_purchases": 2240,
+  "total_revenue_usd": 2328.6000000000004,
+  "tables": {
+    "fact_purchase": {
+      "filename": "fact_purchase.parquet",
+      "filepath": "data/processed/fact_purchase.parquet",
+      "row_count": 2240,
+      "col_count": 12,
+      "columns": [
+        "InvoiceLineId",
+        "CustomerId",
+        "TrackId",
+        "InvoiceId",
+        "InvoiceDate",
+        "UnitPrice",
+        "Quantity",
+        "LineTotal",
+        "AlbumId",
+        "ArtistId",
+        "GenreId",
+        "MediaTypeId"
+      ],
+      "content_hash_sha256": "e7a6c70cd923f4f81ec647e3bb335308652b415c1e34eef1229da5ab2f6edb8d",
+      "file_hash_sha256": "0e8808adffbd2aebd1d3cd4c64bda8bb5238ddaaf389eb674b345e8fd0e98998",
+      "file_size_bytes": 47236
+    },
+    "dim_customer": {
+      "filename": "dim_customer.parquet",
+      "filepath": "data/processed/dim_customer.parquet",
+      "row_count": 59,
+      "col_count": 19,
+      "columns": [
+        "CustomerId",
+        "FirstName",
+        "LastName",
+        "Company",
+        "Address",
+        "City",
+        "State",
+        "Country",
+        "PostalCode",
+        "Phone",
+        "Fax",
+        "Email",
+        "SupportRepId",
+        "CustomerName",
+        "total_tracks_bought",
+        "unique_albums_bought",
+        "unique_artists_bought",
+        "total_spending",
+        "has_purchases"
+      ],
+      "content_hash_sha256": "928e60d223190d4dd759de10b46650149438a98929918bf5f0b22db8362d9d46",
+      "file_hash_sha256": "91d9a800086820662e4567ca62169ef82168b39235940f80a8ef2a0191bda70c",
+      "file_size_bytes": 19334
+    },
+    "dim_track": {
+      "filename": "dim_track.parquet",
+      "filepath": "data/processed/dim_track.parquet",
+      "row_count": 3503,
+      "col_count": 11,
+      "columns": [
+        "TrackId",
+        "Name",
+        "AlbumId",
+        "MediaTypeId",
+        "GenreId",
+        "Composer",
+        "Milliseconds",
+        "Bytes",
+        "UnitPrice",
+        "is_duplicate_name_album",
+        "is_sold"
+      ],
+      "content_hash_sha256": "496f43fe7d1871aaae0bc5ac1ea532ed91357abfe6879b422f1e0f5c12424939",
+      "file_hash_sha256": "77263f9ef9045feea697557e3d723431892f31456776f7264d0653a27f0582cb",
+      "file_size_bytes": 144070
+    },
+    "dim_album": {
+      "filename": "dim_album.parquet",
+      "filepath": "data/processed/dim_album.parquet",
+      "row_count": 347,
+      "col_count": 5,
+      "columns": [
+        "AlbumId",
+        "Title",
+        "ArtistId",
+        "total_tracks",
+        "is_sold"
+      ],
+      "content_hash_sha256": "3c8746feabddc615a1d53c81e7e0e408a78dbfb6b684ce2a2788e7d5ce075a71",
+      "file_hash_sha256": "af63332ec119f9a6a1c0df5a47ae981db5ac3c7573f5ecf9512ce34ff87343db",
+      "file_size_bytes": 13752
+    },
+    "dim_artist": {
+      "filename": "dim_artist.parquet",
+      "filepath": "data/processed/dim_artist.parquet",
+      "row_count": 275,
+      "col_count": 5,
+      "columns": [
+        "ArtistId",
+        "Name",
+        "total_albums",
+        "total_tracks",
+        "is_sold"
+      ],
+      "content_hash_sha256": "6e386f3be6c24d9345546e3411f1f6393046738968bbf86b4cd91789e0ceb2f0",
+      "file_hash_sha256": "11348aaae62e3ced77df6fefec7ad40619ff5ea615d0cf07bbb631b186fa8016",
+      "file_size_bytes": 10733
+    },
+    "dim_genre": {
+      "filename": "dim_genre.parquet",
+      "filepath": "data/processed/dim_genre.parquet",
+      "row_count": 25,
+      "col_count": 4,
+      "columns": [
+        "GenreId",
+        "Name",
+        "total_tracks",
+        "is_sold"
+      ],
+      "content_hash_sha256": "b24b478992c821160cec70a18d1edeba75dc2fffabaa034fd599e7aaf2d9ac77",
+      "file_hash_sha256": "8f0d9727e4cedd54b6db201805feaf6ad62fd5b8ab6f4b6fe01e43b1426b21df",
+      "file_size_bytes": 3339
+    }
+  },
+  "audit_summary": {
+    "total_rules_evaluated": 7,
+    "audit_log_csv": "data/processed/etl_audit_log.csv",
+    "audit_log_json": "data/processed/etl_audit_log.json"
+  },
+  "extra_metadata": {
+    "extract_metadata": {
+      "db_path": "data/Chinook_Sqlite.sqlite",
+      "tables_extracted": 8,
+      "table_stats": {
+        "Customer": {
+          "row_count": 59,
+          "col_count": 13,
+          "columns": [
+            "CustomerId",
+            "FirstName",
+            "LastName",
+            "Company",
+            "Address",
+            "City",
+            "State",
+            "Country",
+            "PostalCode",
+            "Phone",
+            "Fax",
+            "Email",
+            "SupportRepId"
+          ]
+        },
+        "Invoice": {
+          "row_count": 412,
+          "col_count": 9,
+          "columns": [
+            "InvoiceId",
+            "CustomerId",
+            "InvoiceDate",
+            "BillingAddress",
+            "BillingCity",
+            "BillingState",
+            "BillingCountry",
+            "BillingPostalCode",
+            "Total"
+          ]
+        },
+        "InvoiceLine": {
+          "row_count": 2240,
+          "col_count": 5,
+          "columns": [
+            "InvoiceLineId",
+            "InvoiceId",
+            "TrackId",
+            "UnitPrice",
+            "Quantity"
+          ]
+        },
+        "Track": {
+          "row_count": 3503,
+          "col_count": 9,
+          "columns": [
+            "TrackId",
+            "Name",
+            "AlbumId",
+            "MediaTypeId",
+            "GenreId",
+            "Composer",
+            "Milliseconds",
+            "Bytes",
+            "UnitPrice"
+          ]
+        },
+        "Album": {
+          "row_count": 347,
+          "col_count": 3,
+          "columns": [
+            "AlbumId",
+            "Title",
+            "ArtistId"
+          ]
+        },
+        "Artist": {
+          "row_count": 275,
+          "col_count": 2,
+          "columns": [
+            "ArtistId",
+            "Name"
+          ]
+        },
+        "Genre": {
+          "row_count": 25,
+          "col_count": 2,
+          "columns": [
+            "GenreId",
+            "Name"
+          ]
+        },
+        "MediaType": {
+          "row_count": 5,
+          "col_count": 2,
+          "columns": [
+            "MediaTypeId",
+            "Name"
+          ]
+        }
+      }
+    },
+    "eda_comparison": {
+      "metric_comparison": [
+        {
+          "metric": "Tổng số dòng giao dịch (Transaction lines)",
+          "before_etl": 2240,
+          "after_etl": 2240,
+          "diff": 0,
+          "status": "MATCH"
+        },
+        {
+          "metric": "Tổng doanh thu tích lũy (USD)",
+          "before_etl": 2328.6,
+          "after_etl": 2328.6,
+          "diff": 0.0,
+          "status": "MATCH"
+        },
+        {
+          "metric": "Số lượng khách hàng có đơn (Active Customers)",
+          "before_etl": 59,
+          "after_etl": 59,
+          "diff": 0,
+          "status": "MATCH"
+        },
+        {
+          "metric": "Số lượng Track đã phát sinh mua (Sold Tracks)",
+          "before_etl": 1984,
+          "after_etl": 1984,
+          "diff": 0,
+          "status": "MATCH"
+        },
+        {
+          "metric": "Số lượng Album có track được mua (Sold Albums)",
+          "before_etl": 304,
+          "after_etl": 304,
+          "diff": 0,
+          "status": "MATCH"
+        },
+        {
+          "metric": "Độ đậm đặc Khách x Track (Density on sold)",
+          "before_etl": "1.914%",
+          "after_etl": "1.914%",
+          "diff": "0.000%",
+          "status": "MATCH"
+        },
+        {
+          "metric": "Độ đậm đặc Khách x Album (Density on sold)",
+          "before_etl": "7.254%",
+          "after_etl": "7.254%",
+          "diff": "0.000%",
+          "status": "MATCH"
+        }
+      ]
+    }
+  }
+}

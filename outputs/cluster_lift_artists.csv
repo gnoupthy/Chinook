@@ -1,0 +1,157 @@
+﻿cluster,cluster_size,item_level,item_id,item_name,customers_in_cluster,coverage_pct,overall_customers,overall_rate_pct,lift
+0,12,artist,42,Milton Nascimento,5,41.67,5,8.47,4.917
+0,12,artist,85,Frank Sinatra,4,33.33,4,6.78,4.917
+0,12,artist,86,Funk Como Le Gusta,4,33.33,4,6.78,4.917
+0,12,artist,147,Battlestar Galactica,6,50.0,6,10.17,4.917
+0,12,artist,106,Motörhead,4,33.33,5,8.47,3.933
+0,12,artist,9,BackBeat,3,25.0,4,6.78,3.688
+0,12,artist,10,Billy Cobham,3,25.0,4,6.78,3.688
+0,12,artist,11,Black Label Society,3,25.0,4,6.78,3.688
+0,12,artist,108,Mônica Marianno,3,25.0,4,6.78,3.688
+0,12,artist,109,Mötley Crüe,3,25.0,4,6.78,3.688
+0,12,artist,110,Nirvana,3,25.0,4,6.78,3.688
+0,12,artist,146,Titãs,7,58.33,10,16.95,3.442
+0,12,artist,12,Black Sabbath,4,33.33,6,10.17,3.278
+0,12,artist,84,Foo Fighters,4,33.33,6,10.17,3.278
+0,12,artist,16,Caetano Veloso,5,41.67,8,13.56,3.073
+0,12,artist,27,Gilberto Gil,5,41.67,8,13.56,3.073
+0,12,artist,14,Bruce Dickinson,4,33.33,7,11.86,2.81
+0,12,artist,148,Heroes,4,33.33,7,11.86,2.81
+0,12,artist,17,Chico Buarque,6,50.0,11,18.64,2.682
+0,12,artist,13,Body Count,3,25.0,6,10.17,2.458
+0,12,artist,68,Miles Davis,4,33.33,8,13.56,2.458
+0,12,artist,131,Smashing Pumpkins,4,33.33,10,16.95,1.967
+0,12,artist,145,Tim Maia,4,33.33,10,16.95,1.967
+0,12,artist,8,Audioslave,3,25.0,8,13.56,1.844
+0,12,artist,88,Guns N' Roses,4,33.33,11,18.64,1.788
+0,12,artist,149,Lost,4,33.33,12,20.34,1.639
+0,12,artist,54,Green Day,4,33.33,14,23.73,1.405
+0,12,artist,76,Creedence Clearwater Revival,3,25.0,12,20.34,1.229
+0,12,artist,50,Metallica,6,50.0,27,45.76,1.093
+0,12,artist,81,Eric Clapton,3,25.0,16,27.12,0.922
+0,12,artist,113,Os Paralamas Do Sucesso,3,25.0,16,27.12,0.922
+0,12,artist,22,Led Zeppelin,5,41.67,28,47.46,0.878
+0,12,artist,150,U2,3,25.0,29,49.15,0.509
+1,10,artist,23,Frank Zappa & Captain Beefheart,4,40.0,4,6.78,5.9
+1,10,artist,24,Marcos Valle,4,40.0,4,6.78,5.9
+1,10,artist,89,Incognito,4,40.0,4,6.78,5.9
+1,10,artist,115,Page & Plant,4,40.0,4,6.78,5.9
+1,10,artist,116,Passengers,4,40.0,4,6.78,5.9
+1,10,artist,19,Cidade Negra,4,40.0,5,8.47,4.72
+1,10,artist,20,Cláudio Zoli,3,30.0,4,6.78,4.425
+1,10,artist,117,Paul D'Ianno,3,30.0,4,6.78,4.425
+1,10,artist,114,Ozzy Osbourne,5,50.0,9,15.25,3.278
+1,10,artist,18,Chico Science & Nação Zumbi,3,30.0,6,10.17,2.95
+1,10,artist,118,Pearl Jam,3,30.0,6,10.17,2.95
+1,10,artist,80,Djavan,3,30.0,8,13.56,2.212
+1,10,artist,88,Guns N' Roses,4,40.0,11,18.64,2.145
+1,10,artist,21,Various Artists,5,50.0,14,23.73,2.107
+1,10,artist,113,Os Paralamas Do Sucesso,5,50.0,16,27.12,1.844
+1,10,artist,150,U2,9,90.0,29,49.15,1.831
+1,10,artist,6,Antônio Carlos Jobim,3,30.0,12,20.34,1.475
+1,10,artist,52,Kiss,3,30.0,13,22.03,1.362
+1,10,artist,22,Led Zeppelin,6,60.0,28,47.46,1.264
+1,10,artist,81,Eric Clapton,3,30.0,16,27.12,1.106
+1,10,artist,90,Iron Maiden,5,50.0,27,45.76,1.093
+1,10,artist,50,Metallica,4,40.0,27,45.76,0.874
+2,15,artist,36,O Rappa,3,20.0,3,5.08,3.933
+2,15,artist,46,Jorge Ben,4,26.67,4,6.78,3.933
+2,15,artist,95,Joe Satriani,4,26.67,4,6.78,3.933
+2,15,artist,96,Jota Quest,4,26.67,4,6.78,3.933
+2,15,artist,97,João Suplicy,4,26.67,4,6.78,3.933
+2,15,artist,126,Raul Seixas,4,26.67,4,6.78,3.933
+2,15,artist,127,Red Hot Chili Peppers,6,40.0,6,10.17,3.933
+2,15,artist,128,Rush,5,33.33,5,8.47,3.933
+2,15,artist,130,Skank,4,26.67,4,6.78,3.933
+2,15,artist,179,Scorpions,3,20.0,3,5.08,3.933
+2,15,artist,180,House Of Pain,3,20.0,3,5.08,3.933
+2,15,artist,204,Temple of the Dog,3,20.0,3,5.08,3.933
+2,15,artist,205,Chris Cornell,3,20.0,3,5.08,3.933
+2,15,artist,59,Santana,7,46.67,8,13.56,3.442
+2,15,artist,77,Cássia Eller,5,33.33,6,10.17,3.278
+2,15,artist,94,Jimi Hendrix,4,26.67,5,8.47,3.147
+2,15,artist,37,Ed Motta,3,20.0,4,6.78,2.95
+2,15,artist,93,JET,3,20.0,4,6.78,2.95
+2,15,artist,125,Raimundos,3,20.0,4,6.78,2.95
+2,15,artist,133,Stevie Ray Vaughan & Double Trouble,3,20.0,5,8.47,2.36
+2,15,artist,76,Creedence Clearwater Revival,7,46.67,12,20.34,2.294
+2,15,artist,70,Toquinho & Vinícius,4,26.67,7,11.86,2.248
+2,15,artist,98,Judas Priest,4,26.67,7,11.86,2.248
+2,15,artist,8,Audioslave,4,26.67,8,13.56,1.967
+2,15,artist,69,Gene Krupa,4,26.67,8,13.56,1.967
+2,15,artist,122,R.E.M. Feat. Kate Pearson,3,20.0,6,10.17,1.967
+2,15,artist,131,Smashing Pumpkins,5,33.33,10,16.95,1.967
+2,15,artist,22,Led Zeppelin,12,80.0,28,47.46,1.686
+2,15,artist,132,Soundgarden,3,20.0,7,11.86,1.686
+2,15,artist,149,Lost,5,33.33,12,20.34,1.639
+2,15,artist,58,Deep Purple,4,26.67,10,16.95,1.573
+2,15,artist,150,U2,11,73.33,29,49.15,1.492
+2,15,artist,68,Miles Davis,3,20.0,8,13.56,1.475
+2,15,artist,158,Battlestar Galactica (Classic),3,20.0,8,13.56,1.475
+2,15,artist,21,Various Artists,5,33.33,14,23.73,1.405
+2,15,artist,6,Antônio Carlos Jobim,4,26.67,12,20.34,1.311
+2,15,artist,114,Ozzy Osbourne,3,20.0,9,15.25,1.311
+2,15,artist,113,Os Paralamas Do Sucesso,5,33.33,16,27.12,1.229
+2,15,artist,52,Kiss,4,26.67,13,22.03,1.21
+2,15,artist,51,Queen,4,26.67,15,25.42,1.049
+2,15,artist,100,Lenny Kravitz,4,26.67,15,25.42,1.049
+2,15,artist,53,Spyro Gyra,3,20.0,12,20.34,0.983
+2,15,artist,81,Eric Clapton,4,26.67,16,27.12,0.983
+2,15,artist,124,R.E.M.,3,20.0,15,25.42,0.787
+2,15,artist,90,Iron Maiden,4,26.67,27,45.76,0.583
+2,15,artist,50,Metallica,3,20.0,27,45.76,0.437
+3,10,artist,55,David Coverdale,4,40.0,4,6.78,5.9
+3,10,artist,72,Vinícius De Moraes,4,40.0,4,6.78,5.9
+3,10,artist,153,Velvet Revolver,5,50.0,5,8.47,5.9
+3,10,artist,155,Zeca Pagodinho,4,40.0,4,6.78,5.9
+3,10,artist,152,Van Halen,6,60.0,7,11.86,5.057
+3,10,artist,56,Gonzaguinha,3,30.0,4,6.78,4.425
+3,10,artist,120,Pink Floyd,3,30.0,4,6.78,4.425
+3,10,artist,151,UB40,3,30.0,4,6.78,4.425
+3,10,artist,121,Planet Hemp,4,40.0,6,10.17,3.933
+3,10,artist,118,Pearl Jam,3,30.0,6,10.17,2.95
+3,10,artist,100,Lenny Kravitz,7,70.0,15,25.42,2.753
+3,10,artist,148,Heroes,3,30.0,7,11.86,2.529
+3,10,artist,53,Spyro Gyra,5,50.0,12,20.34,2.458
+3,10,artist,54,Green Day,5,50.0,14,23.73,2.107
+3,10,artist,51,Queen,5,50.0,15,25.42,1.967
+3,10,artist,90,Iron Maiden,9,90.0,27,45.76,1.967
+3,10,artist,124,R.E.M.,5,50.0,15,25.42,1.967
+3,10,artist,156,The Office,3,30.0,9,15.25,1.967
+3,10,artist,145,Tim Maia,3,30.0,10,16.95,1.77
+3,10,artist,50,Metallica,5,50.0,27,45.76,1.093
+3,10,artist,150,U2,5,50.0,29,49.15,1.017
+4,12,artist,3,Aerosmith,4,33.33,4,6.78,4.917
+4,12,artist,101,Lulu Santos,4,33.33,4,6.78,4.917
+4,12,artist,102,Marillion,4,33.33,4,6.78,4.917
+4,12,artist,103,Marisa Monte,4,33.33,4,6.78,4.917
+4,12,artist,138,The Clash,5,41.67,5,8.47,4.917
+4,12,artist,139,The Cult,5,41.67,5,8.47,4.917
+4,12,artist,140,The Doors,4,33.33,4,6.78,4.917
+4,12,artist,141,The Police,4,33.33,4,6.78,4.917
+4,12,artist,142,The Rolling Stones,4,33.33,4,6.78,4.917
+4,12,artist,1,AC/DC,5,41.67,6,10.17,4.097
+4,12,artist,136,"Terry Bozzio, Tony Levin & Steve Stevens",4,33.33,5,8.47,3.933
+4,12,artist,137,The Black Crowes,4,33.33,5,8.47,3.933
+4,12,artist,2,Accept,3,25.0,4,6.78,3.688
+4,12,artist,4,Alanis Morissette,3,25.0,4,6.78,3.688
+4,12,artist,78,Def Leppard,3,25.0,4,6.78,3.688
+4,12,artist,79,Dennis Chambers,3,25.0,4,6.78,3.688
+4,12,artist,104,Marvin Gaye,4,33.33,6,10.17,3.278
+4,12,artist,99,Legião Urbana,3,25.0,5,8.47,2.95
+4,12,artist,105,Men At Work,3,25.0,5,8.47,2.95
+4,12,artist,41,Elis Regina,4,33.33,7,11.86,2.81
+4,12,artist,82,Faith No More,6,50.0,11,18.64,2.682
+4,12,artist,80,Djavan,4,33.33,8,13.56,2.458
+4,12,artist,156,The Office,4,33.33,9,15.25,2.185
+4,12,artist,143,The Tea Party,3,25.0,7,11.86,2.107
+4,12,artist,252,Amy Winehouse,3,25.0,8,13.56,1.844
+4,12,artist,50,Metallica,9,75.0,27,45.76,1.639
+4,12,artist,58,Deep Purple,3,25.0,10,16.95,1.475
+4,12,artist,145,Tim Maia,3,25.0,10,16.95,1.475
+4,12,artist,51,Queen,4,33.33,15,25.42,1.311
+4,12,artist,124,R.E.M.,4,33.33,15,25.42,1.311
+4,12,artist,90,Iron Maiden,7,58.33,27,45.76,1.275
+4,12,artist,81,Eric Clapton,4,33.33,16,27.12,1.229
+4,12,artist,100,Lenny Kravitz,3,25.0,15,25.42,0.983
+4,12,artist,22,Led Zeppelin,3,25.0,28,47.46,0.527
